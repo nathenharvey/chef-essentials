@@ -1,6 +1,9 @@
 # Chef Fundamentals 4.x
 
-This is a repo for developing Chef Fundamentals 4.x. Please do not use these files until further notice.
+This is a repo for developing Chef Fundamentals 4.x. Please do not use these files until further notice
+
+NOTE: This is only my first pass on these PPTs. On my second pass I will reduce the verbiage on wordy slides. I will probably also place some exercises on "Exercise" pages instead of over a number of slides.
+
 
 Tentative Modules List
 1.	Intro
