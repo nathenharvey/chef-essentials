@@ -1,11 +1,9 @@
 # Chef Fundamentals 4.x
 
-This is a repo for developing Chef Fundamentals 4.x. Please do not use these files until further notice
-
-NOTE: This is only my first pass on these PPTs. On my second pass I will reduce the verbiage on wordy slides. I will probably also place some exercises on "Exercise" pages instead of over a number of slides.
+This is a repo for developing Chef Fundamentals 4.x. This course has been renamed to Chef Essentials. Please do not use these files until further notice
 
 
-Tentative Modules List
+Modules List
 1.	Intro
 2.	Getting a workstation
 3.	Resources
@@ -21,5 +19,6 @@ Tentative Modules List
 13.	Roles
 14.	Search
 15.	Environments
-16.	Releases
-17.	Further Resources
+16.	Further Resources
+
+Video on how to export the content to a Participant guide: https://drive.google.com/file/d/0B4WmSTt8VtdKZDY5RnhIWVVYZkk/view?usp=sharing
