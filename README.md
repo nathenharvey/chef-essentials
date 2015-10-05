@@ -22,3 +22,9 @@ Modules List
 16.	Further Resources
 
 Video on how to export the content to a Participant guide: https://drive.google.com/file/d/0B4WmSTt8VtdKZDY5RnhIWVVYZkk/view?usp=sharing
+
+## Requirements
+
+The presentation materials require the [Inconsolata Font](http://www.levien.com/type/myfonts/inconsolata.html) to be installed.
+
+A copy of the OpenType File format of this is contained within the repository.
