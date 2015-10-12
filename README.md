@@ -1,6 +1,21 @@
 # Chef Fundamentals 4.x
 
-This is a repo for developing Chef Fundamentals 4.x. This course has been renamed to Chef Essentials. Please do not use these files until further notice
+This is a repo for developing Chef Fundamentals 4.x. This course has been renamed to Chef Essentials. 
+
+The published version of these training materials are located as follows:
+
+Chef-Essentials-Instructor-Kit-v1.0.0 which contains 
+
+•	All 15 PPT slide decks, which you should teach from.
+•	Instructor Guide for you to learn from, practice with, and perhaps use as reference while teaching. (The instructor guide contains speaker notes, instructor notes, and Appendix Z.)
+•	Participant Guide, which is the same as the Instructor Guide sans instructor notes and Appendix Z.
+•	README.
+https://opscode.box.com/s/bx51ra6nk8r25f1c869xc5xkxckcxpte
+
+Here is the link to only the Chef-Essentials-Participant-Guide-v1.0.0. (3.7 MB.) This is the link that will be in the student's confirmation email so some students may already have it prior to class starting.
+
+https://opscode.box.com/s/eq0w3lqkbhx9a3two3wq6bohso2k29nk
+
 
 ## Modules
 
