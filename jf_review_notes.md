@@ -96,7 +96,7 @@ Slide 1 - I prefer the term _add it to the Loadbalancing pool_ to _add it as a p
 
 Slide 3 - It would be useful on these diagrams (in all sections) to include 'node1', 'node2' etc, so they can map the node they bootstrapped to the diagram
 
-Slide 4 - Maybe change "Another Web Node" to "Create Another Web Node" - I thing the Lab ttitle should be more action orientated!
+Slide 4 - Maybe change "Another Web Node" to "Create Another Web Node" - I thing the Lab title should be more action orientated!
 
 # 12-roles.pptx
 We should include a huge instructor note about the windows issue that creates 'role[recipe]', i.e. having an 's' in the role name and how to escape that.
@@ -135,3 +135,73 @@ In fact, might been easier if the naming convention when bootstrapping each node
 Slide 31 - _Separating Environments_ to _GE: Separating Environments_.  Also what about the 1/3 thing again to show this slide shows progress
 
 Slide 42 - 'Step 3/3'? Also footer here says '14'
+
+
+
+
+# Second Pass
+-) See some review comments in slides
+-) Why not `git clone ...` instead of downloading ZIP file. Because maybe no git? Then Berks wont work!
+
+-) Why no attributes file?
+
+-) Why no precedence levels on attribues?
+
+-) No attributes set in roles?
+
+-) Should have them run chef-client as a service, and use berks for this cookbook?
+
+-) knife bootstrap 52.91.245.245 -x chef -P chef --sudo -N node1
+
+-) From '09-chef-server' they use their own laptop as a workstation, so can the screen be a different colour - blue? Definitely need a clearer distinction here.
+
+-) Change terminology from 'Proxy Server' to 'Load Balancer' as its more descriptive on what we're trying to achieve
+
+-) Suggestion: leave community cookbooks for 'chef-client' and using `berks`.  Instead manually create the haproxy cookbook manually, and use that section to focus on search.  Could segway into chef-client by showing that an all-singing all-dancing haproxy cookbook already exists.
+
+-) In '10-community-cookbook' why are we still hardcoding IP Addresses when the last section showed how to avoid that
+
+-) I'm getting confused with all the different graphics on top-right of the slides, and what they mean.
+
+-) In community cookbooks, uploading myhaproxy for first time, Need to `berks init` first
+
+-) We need to show them `knife cookbook upload` first to help explain why we use `berks`, as non developers will not appreciate the dependency thing.  Seems this was written by someone with a programming background.
+
+-) Slide after "GE: Using knife ssh" has wrong title, AND we haven't taught them search yet, so `knife ssh "*:*" ...` means nothing.  This problem would go away of this seciotn was used to teach search, adn have them manually create the `haproxy` cookbook.
+
+-) I think this course would be better served if they each had their own Chef Server, spun up as a marketplace AMI.  They could then either download starterkit, or `knife configure`, more like they'd do in real life.  I have a cookbok that could spin up a chef server and workstation per student.
+
+
+
+-) In '11-Managing-multiple-nodes' section, can we call the nodes webnode01, webnode02, lbnode etc?
+
+-) Nooo stop hardcoding IPs in for haproxy lb pool!  
+
+
+
+-) Section '13-search' MUST be earlier.
+
+-) "Chef Server maintains a representation of all the nodes within our infrastructure that can be searched on. " reword as "Chef Server maintains searchable index of all the nodes within our infrastructure"
+
+-) "The search criteria that we have been using up to this point is "*:*"" - No, we've done "knife ssh "role:web""
+
+-) Slide titled 'Search Syntax within a Recipe', I'd give an exampe recipe first so they can see the context - they might thing _all_web_nodes_ is a keyword, and not some arbitrary text.
+
+-) Search section shows searhing from recipe, but not searching using knife.
+
+-) Search and roles sections could be enhanced by setting apache port to tcp/8080, reconfiging this as role attributes.
+
+
+-) "11-Environments". Could be wrong, but I think this is the first mention of `knife search`
+
+-) Might be nice to bootstrap another node directly into an environemt with the `-E` flag
+
+-) We should have them increase logging on `chef-client`
+
+-) In this class we dont cover contents of `/etc/chef`, and particularly `client.rb`.
+
+-) Dont explain how authentication works.
+
+-) Dont explain the compile/execute phase.  Dont explain how ruby in a recipe gets executed in compile phase.
+
+-) would been nice to show setting attributes in environment files.
