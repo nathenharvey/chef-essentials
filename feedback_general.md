@@ -85,10 +85,10 @@ Here is a suggestion for a change of flow.
     end
     ```
 
- Then have them do `webservers.each` in the erb file.  Could include a bunch of the stuff from '11-managing-multiple-nodes' in this to set up an LB in front of two web servers.
+ Then have them do `webservers.each` in the erb file.  Could include a bunch of the stuff from '11-managing-multiple-nodes' in this section (bootstrapping further nodes etc) to set up an LB in front of two web servers.
 
 3) Could segway into Community Cookbooks by showing that an all-singing all-dancing haproxy cookbook already exists. Then have them download `chef-client` cookbook and upload w/ `berks` etc., and use Community Cookbooks to cover the 'chef-client' cookbook, just as in fundamentals. Berks used here to manage the intricate dependencies.  A `my-chef-client` wrapper cookbook could be used to change the default attribute setting for this cookbook to have chef-client converge every 5 mins.
 
-4) Then roles sections, set apache port to tcp/8080 (and maybe close tcp/80 on in the web nodes' EC2 Security Groups, so they're hidden behind a firewall, like real life) then configure haproxy accordingly to listen on tcp/80 but contact apache on tcp/8080, and do this as role attributes for both `haproxy` and `apache` roles. Base role would have them config `chef-client` as as service on all three nodes, converging every 5 mins.
+4) Then in roles sections, set apache port to tcp/8080 (and maybe close tcp/8080 on in the web nodes' EC2 Security Groups, so they're hidden behind a firewall, like real life) then configure haproxy accordingly to listen on tcp/80 but contact apache on tcp/8080, and do this as role attributes for both `haproxy` and `apache` roles. Base role would have them config `chef-client` as as service on all three nodes, converging every 5 mins.
 
 Some of this is similar to Chef Fundamentals flow, but I believe these are fundamental principles we need to get across. The majority of this content exists already, and what doesn't wouldn't take long to develop.
