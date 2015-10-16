@@ -39,17 +39,24 @@
 - There seems to be too much hard-coding of IP Addresses right up to Section 11, when we should be advocating automation all the way
 
 
-- Concepts missing/dropped from fundamentals:-
--- Attribute files
--- Precedence levels on attributes (roles attributes overwrite attribute files, etc etc)
--- chef-client as a service/task
--- Managing logging on `chef-client`
--- contents of `/etc/chef`, and particularly `client.rb`.
--- what happens during bootstrap - should drill down on that, & explain other approaches
--- how authentication works.
--- compile/execute phase, & in particular how ruby in a recipe gets executed in compile phase.
-
+# Concepts missing/dropped from fundamentals:-
 I think its fine if there was conscious decision to omit these, but just so I know.
+
+- Attribute files
+
+- Precedence levels on attributes (roles attributes overwrite attribute files, etc etc)
+
+- chef-client as a service/task
+
+- Managing logging on `chef-client`
+
+- contents of `/etc/chef`, and particularly `client.rb`.
+
+- what happens during bootstrap - should drill down on that, & explain other approaches
+
+- how authentication works.
+
+- compile/execute phase, & in particular how ruby in a recipe gets executed in compile phase.
 
 
 # Suggested Change in Flow.
