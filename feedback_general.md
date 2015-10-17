@@ -66,26 +66,38 @@ Here is a suggestion for a change of flow.
 
 2) In its place, after '09-chef-server' we have them manually create HAProxy cookbook from scratch and and use that section to teach them search & template variables along the way, so there is no hard-codong IP Addresses in the cookbook. Something like this
 
-    ```ruby
-    package 'haproxy' do
-      action :install
-    end
+```ruby
+package 'haproxy' do
+  action :install
+end
 
-    webservers = search("node","role:web")
+webservers = search("node","role:web")
 
-    template '/etc/haproxy/haproxy.cfg' do
-      source 'haproxy.cfg.erb'
-      variables(
-      :webservers => webservers
-      )
-    end
+template '/etc/haproxy/haproxy.cfg' do
+  source 'haproxy.cfg.erb'
+  variables(
+  :webservers => webservers
+  )
+end
 
-    service 'haproxy' do
-      action [:start, :enable]
-    end
-    ```
+service 'haproxy' do
+  action [:start, :enable]
+end
+```
 
- Then have them do `webservers.each` in the erb file.  Could include a bunch of the stuff from '11-managing-multiple-nodes' in this section (bootstrapping further nodes etc) to set up an LB in front of two web servers.
+Then do this in the erb file:-
+
+```ruby
+...
+backend servers-http
+<% @webservers.each do |web| -%>
+  server <%= web["cloud"]["public_hostname"] %> <%= web["cloud"]["public_ipv4"] %>:80 weight 1 maxconn 100 check
+<% end -%>
+```
+
+
+
+ Could include a bunch of the stuff from '11-managing-multiple-nodes' in this section (bootstrapping further nodes etc) to set up an LB in front of two web servers.
 
 3) Could segway into Community Cookbooks by showing that an all-singing all-dancing haproxy cookbook already exists. Then have them download `chef-client` cookbook and upload w/ `berks` etc., and use Community Cookbooks to cover the 'chef-client' cookbook, just as in fundamentals. Berks used here to manage the intricate dependencies.  A `my-chef-client` wrapper cookbook could be used to change the default attribute setting for this cookbook to have chef-client converge every 5 mins.
 
