@@ -10,6 +10,7 @@ Chef-Essentials-Instructor-Kit, which contains
 •	Instructor Guide for you to learn from, practice with, and perhaps use as reference while teaching. (The instructor guide contains speaker notes, instructor notes, and Appendix Z. Appendix Z contains lab setup info.)
 •	Participant Guide, which is the same as the Instructor Guide sans instructor notes and Appendix Z.
 •	README.
+
 https://opscode.box.com/s/bx51ra6nk8r25f1c869xc5xkxckcxpte
 
 Here is the link to only the Chef-Essentials-Participant-Guide. (3.7 MB.) This is the link that will be in the student's confirmation email so some students may already have it prior to class starting.
