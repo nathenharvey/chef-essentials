@@ -1,6 +1,6 @@
-# Chef Fundamentals 4.x
+# Chef Essentials
 
-This is a repo for developing Chef Fundamentals 4.x. This course has been renamed to Chef Essentials.
+This is a repo for developing Chef Essentials.
 
 The latest published version of these training materials are located as follows:
 
