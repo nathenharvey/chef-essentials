@@ -16,7 +16,7 @@ We present the problem that our site has just got super busy so we need further 
 
 1. We show more details with `knife node show web01` and `knife node show web02` - but how that’s used for single nodes.  How do we find info on both nodes?
 
-1. Introduce search `knife search node "*:*”`` and `knife search node "*:*" -a cloud.public_ipv4`
+1. Introduce search `knife search node "*:*”` and `knife search node "*:*" -a cloud.public_ipv4`
 
 1. They hit these two web servers individually, and explain we need an LB to distribute traffic
 
@@ -108,7 +108,7 @@ end
 
 1. They pull http://bit.ly/1M4BRmC (probably could trim that file way back) into `httpd.conf.erb`
 
-1. Set line 27 to node['apache']['port']
+1. Set line 27 to `node['apache']['port']`
 
 ```ruby
 ...
@@ -116,7 +116,7 @@ Listen node['apache']['port']
 ...
 ```
 
-1. Set update `haproxy.cfg.erb`
+1. Now update `haproxy.cfg.erb`
 
 ```ruby
 backend servers-http
