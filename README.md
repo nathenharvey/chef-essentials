@@ -6,17 +6,19 @@ The latest published version of these training materials are located as follows:
 
 Chef-Essentials-Instructor-Kit, which contains
 
-•	All 15 PPT slide decks, which you should teach from.
-•	Instructor Guide for you to learn from, practice with, and perhaps use as reference while teaching. (The instructor guide contains speaker notes, instructor notes, and Appendix Z. Appendix Z contains lab setup info.)
-•	Participant Guide, which is the same as the Instructor Guide sans instructor notes and Appendix Z.
-•	README.
+*	All 15 PPT slide decks, which you should teach from.
+
+* Instructor Guide for you to learn from, practice with, and perhaps use as reference while teaching. (The instructor guide contains speaker notes, instructor notes, and Appendix Z. Appendix Z contains lab setup info.)
+
+* Participant Guide, which is the same as the Instructor Guide sans instructor notes and Appendix Z.
+
+* README.
 
 https://opscode.box.com/s/bx51ra6nk8r25f1c869xc5xkxckcxpte
 
 Here is the link to only the Chef-Essentials-Participant-Guide. (3.7 MB.) This is the link that will be in the student's confirmation email so some students may already have it prior to class starting.
 
 https://opscode.box.com/s/75s0s971d7z5hdmtb6ua0os2vekf7zz6
-
 
 ## Modules
 
@@ -35,6 +37,11 @@ https://opscode.box.com/s/75s0s971d7z5hdmtb6ua0os2vekf7zz6
 13.	Search
 14.	Environments
 15.	Further Resources
+
+## Videos
+
+[Screencast Recordings](https://drive.google.com/open?id=0B1nt6eQeCbyRb3BCZHFPcHZ5N2c
+) of the presentation.
 
 ## Publishing
 
