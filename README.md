@@ -10,7 +10,7 @@ Chef Essentials is a comprehensive instructor-led course covering the basic arch
 
 Attendees need a network-enabled laptop with a terminal that supports SSH.
 
-* Windows 7 through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/).
+* Windows 7+ through [Putty](http://www.putty.org/) or [Cygwin with OpenSSH](https://www.cygwin.com/).
 
 * Mac OS X 10.11
 
