@@ -81,7 +81,7 @@ The first series of modules focus on getting learners engaged with the content a
 
 This workstation is currently being managed as a Amazon Machine Instance (AMI). This AMI is managed by Chef through the Training AWS Account.
 
-* Essentials - CentOS 6.7 - 4.1.0 (ami-506a473a)
+* Essentials - CentOS 6.7 - 5.0.0 (ami-752b191f)
 
 > The AMI was generated with [Packer](https://github.com/chef-training/chefdk-fundamentals-image) and adheres to the following [policy](https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations/recipes/essentials.rb). It is based on a Marketplace AMI so it cannot be made public. If you would like access to this AMI to deliver training please contact [training@chef.io](mailto:training@chef.io) the request that includes your Amazon Account Id.
 
@@ -101,7 +101,9 @@ https://github.com/chef-training/chefdk-image/blob/master/cookbooks/workstations
 $ yum update -y
 ```
 
-* Uninstall various editors and tools that the attendee will install: vim; emacs; nano; tree; and git.
+* Install editors: vim; emacs; nano.
+
+* Uninstall other tools that they will install: cowsay; tree; and git.
 
 * Install [Docker on CentOS](https://docs.docker.com/engine/installation/centos/)
 
