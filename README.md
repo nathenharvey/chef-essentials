@@ -67,7 +67,11 @@ This content can be found here: https://drive.google.com/open?id=0B1nt6eQeCbyRb3
 
 ## Known Issues
 
-* MODULE 05 - Currently the testing section relies on Docker to assist with the creation of a instance for testing. There have been occasions where Test Kitchen will fail. In the even of a failure or an error related to Docker it is often best to restart the docker service.
+### MODULE 05 - Testing Cookbooks
+
+* The 'cowsay' package is not present in the CentOS container.
+
+* Currently the testing section relies on Docker to assist with the creation of a instance for testing. There have been occasions where Test Kitchen will fail. In the even of a failure or an error related to Docker it is often best to restart the docker service.
 
 ```
 $ sudo service docker restart
